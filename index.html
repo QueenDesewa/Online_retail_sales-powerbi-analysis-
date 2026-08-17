@@ -399,13 +399,14 @@
 
         <!-- gallery: include the main dashboard and the quantity dashboard (page 3) -->
         <div class="gallery">
-            <img src="dashboard(1).png" alt="Online Retail Sales Power BI Dashboard - Overview">
+            <!-- prefer safe filenames; fall back to original names if missing -->
+            <img src="dashboard1.png" alt="Online Retail Sales Power BI Dashboard - Overview" onerror="this.onerror=null;this.src='dashboard(1).png'">
             <img src="quantity_dashboard.png" alt="Quantity Dashboard - Page 2">
-            <!-- Orders dashboard: the repo filename is "Orders_dashboard png" (note the space). -->
-            <img src="Orders_dashboard png" alt="Orders Dashboard - Page 3">
+            <!-- Orders dashboard: original repo filename contained a space; use safe name with fallback -->
+            <img src="orders_dashboard.png" alt="Orders Dashboard - Page 3" onerror="this.onerror=null;this.src='Orders_dashboard png'">
             <img src="returns_dashboard.png" alt="Returns Dashboard - Page 4">
-            <!-- Insights: repo filename is "insights _dashboard.png" (note the space before underscore). -->
-            <img src="insights _dashboard.png" alt="Insights Dashboard - Page 5">
+            <!-- Insights: original repo filename has a space before underscore; use safe name with fallback -->
+            <img src="insights_dashboard.png" alt="Insights Dashboard - Page 5" onerror="this.onerror=null;this.src='insights _dashboard.png'">
         </div>
 
     </section>
@@ -618,6 +619,9 @@
         </div>
 
     </section>
+
+
+    <!-- PROJECT OUTCOME -->
 
 
 </main>
