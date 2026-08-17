@@ -143,7 +143,24 @@
             text-align: center;
         }
 
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+
         .dashboard img {
+            /* keep a sensible default for single-image fallbacks */
             width: 100%;
             max-width: 1000px;
             border-radius: 8px;
@@ -205,6 +222,10 @@
             nav a {
                 display: inline-block;
                 margin: 5px 8px;
+            }
+
+            .gallery img {
+                max-width: 100%;
             }
         }
     </style>
@@ -376,15 +397,11 @@
         </p>
 
 
-        <!--
-        IMPORTANT:
-        Replace dashboard.png with the EXACT filename
-        of your dashboard image in your GitHub repository.
-        -->
-
-        <img src="dashboard(1).png"
-             alt="Online Retail Sales Power BI Dashboard">
-
+        <!-- gallery: include the main dashboard and the quantity dashboard (page 3) -->
+        <div class="gallery">
+            <img src="dashboard(1).png" alt="Online Retail Sales Power BI Dashboard - Overview">
+            <img src="quantity_dashboard.png" alt="Quantity Dashboard - Page 3">
+        </div>
 
     </section>
 
